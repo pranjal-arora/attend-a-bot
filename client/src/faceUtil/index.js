@@ -20,23 +20,16 @@ export async function loadModels(
     await faceapi.loadFaceRecognitionModel(MODEL_URL);
   } catch (err) {
     setLoadingMessageError(
-      'Model loading failed. Please contact me about the bug:Attend-a-bot@gmail.com'
+      'Model loading failed.'
     );
   }
 }
 
-/*Input size:
-    size at which image is processed,the smaller the faster,
-  but less precise in detecting smaller faces,must be divisible
-  by 32,common sizes are 128,160,224,320,416,512,608,
-    for face tracking via webcam recommend using smaller sizes,e.g. 128,160,
-    for detecting smaller faces use larger sizes,e.g. 512,608
-    default input size:416 */
 
 export async function getFullFaceDescription(blob, inputSize = 512) {
   // tiny_face_detector options
   //ssd_mobilenet_v1 options-->to detect face with threshold accuracy
-  let scoreThreshold = 0.8; //can be set to 0.45
+  let scoreThreshold = 0.45; //can be set to 0.8
   const OPTION = new faceapi.SsdMobilenetv1Options({
     inputSize,
     scoreThreshold,

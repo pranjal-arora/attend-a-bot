@@ -24,7 +24,7 @@ export const UploadFromWebcam = ({
   const [inputDevices, setInputDevices] = useState([]);
   const [selectedWebcam, setSelectedWebcam] = useState();
 
-  const [fullDesc, setFullDesc] = useState(null);
+  const [fullDesc, setFullDesc] = useState();
 
   const [faceDescriptor, setFaceDescriptor] = useState([]);
 
@@ -33,7 +33,7 @@ export const UploadFromWebcam = ({
 
   const [waitText, setWaitText] = useState("");
 
-  //
+  
   const webcamRef = useRef();
   const canvasRef = useRef();
 
@@ -85,12 +85,12 @@ export const UploadFromWebcam = ({
             setFullDesc(data);
             setFaceDescriptor(data[0]?.descriptor);
             setWaitText("");
-          })
-          .catch((err) => {
-            setWaitText(
-              "Preparing face matcher and device setup, please wait..."
-            );
           });
+          // .catch((err) => {
+          //   setWaitText(
+          //     "Preparing face matcher and device setup, please wait..."
+          //   );
+          // });
         const ctx = canvasRef.current.getContext("2d");
 
         drawFaceRect(fullDesc, ctx);

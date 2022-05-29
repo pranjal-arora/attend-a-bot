@@ -230,7 +230,7 @@ export default (props) => {
         </Card>
 
         <Divider />
-        <Space>
+        {/* <Space>
           <GoogleLogin
             clientId={GOOGLE_CLIENT_ID}
             buttonText='Continue With Google'
@@ -243,7 +243,7 @@ export default (props) => {
             onRequest={() => setPressedGoogleLogin(true)}
             disabled={pressedGoogleLogin}
           />
-        </Space>
+        </Space> */}
         {loginGoogleUserStatus.loading && (
 
           <Space>

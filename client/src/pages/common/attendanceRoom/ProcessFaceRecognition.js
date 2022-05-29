@@ -104,12 +104,12 @@ export default (props) => {
           .then((data) => {
             setFullDesc(data);
             setWaitText("");
-          })
-          .catch((err) => {
-            setWaitText(
-              "Preparing face matcher and device setup, please wait..."
-            );
           });
+          // .catch((err) => {
+          //   setWaitText(
+          //     "Preparing face matcher and device setup, please wait..."
+          //   );
+          // });
         const ctx = canvasRef.current.getContext("2d");
 
         drawRectAndLabelFace(fullDesc, faceMatcher, participants, ctx);
