@@ -1,6 +1,6 @@
 .notification{
     background-color: #eef !important;
-    color: rgb(110, 113, 160) !important;
+    color: rgb(184, 141, 185) !important;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
     width: 100% !important;
@@ -8,15 +8,15 @@
 
 .notification:hover, .unchecked_notification:hover{
     background-color: rgb(235, 235, 235) !important;
-    color: grey !important;
+    color: rgb(225, 154, 193) !important;
 }
 
 .notification:hover, .unchecked_notification:hover .notification__title{
-    color: grey !important;
+    color:rgb(225, 154, 193) !important;
 }
 
 .notification .notification__title{
-    color: rgb(110, 113, 160) !important;
+    color: rgb(151, 192, 239) !important;
     font-weight: 1000;
     font-size: 20px;
 }

@@ -23,7 +23,7 @@
 }
 .headerNavbar__text__item:first-child{
     font-weight: bold;
-    color: #99f;
+    color: rgb(122, 187, 244);
     margin-right: 5px;
 }
 .headerNavbar__text__item:nth-child(2){
