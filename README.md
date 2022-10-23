@@ -1,7 +1,8 @@
 # attend-a-bot
 ### A project by Pranjal Arora, for Microsoft Intern Engage 2022
-### Registered Email ID : prv.gma@gmail.com
- Attend-a-bot is a real time face recognition attendance tracker web application, built using face-api.js, react.js, node.js, mongoDB and apollo graphQL queries. 
+
+
+Attend-a-bot is a real time face recognition attendance tracker web application, built using face-api.js, react.js, node.js, mongoDB and apollo graphQL queries. 
 
 ### To run the application locally:
 1. clone this repository
